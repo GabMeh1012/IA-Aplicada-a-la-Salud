@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="n2Title">
+  <title id="n2Title">Mamografía con puntos de análisis de un modelo de inteligencia artificial</title>
+  <defs>
+    <linearGradient id="n2Bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#134e6f"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#n2Bg)"/>
+  <path d="M200 40 C 130 40, 90 100, 100 150 C 108 195, 150 210, 200 208 C 250 210, 292 195, 300 150 C 310 100, 270 40, 200 40 Z"
+    fill="#ffffff" fill-opacity="0.08" stroke="#e6f4f3" stroke-width="2.5"/>
+  <g stroke="#5eead4" stroke-width="1" opacity="0.6">
+    <path d="M150 80 q50 20 100 0" fill="none"/>
+    <path d="M140 120 q60 24 120 0" fill="none"/>
+    <path d="M150 160 q50 18 100 0" fill="none"/>
+  </g>
+  <circle cx="190" cy="120" r="10" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+  <circle cx="190" cy="120" r="3" fill="#fbbf24"/>
+  <circle cx="230" cy="150" r="7" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.8"/>
+  <g fill="#5eead4">
+    <circle cx="90" cy="60" r="3"/>
+    <circle cx="320" cy="70" r="3"/>
+    <circle cx="80" cy="190" r="3"/>
+    <circle cx="315" cy="185" r="3"/>
+  </g>
+</svg>

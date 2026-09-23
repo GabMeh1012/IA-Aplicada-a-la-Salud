@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediIA · Inteligencia Artificial aplicada a la Salud</title>
+  <meta name="description" content="MediIA explica como la inteligencia artificial ayuda a detectar enfermedades antes, apoyar a los médicos y acercar la atención a más personas. Proyecto académico UTP.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav-bar container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Logo de MediIA">
+        <span class="brand-text">
+          <strong>MediIA</strong>
+          <span>IA en la Salud</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle">
+      <label for="navToggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero-photo" style="background-image: url('img/hero-inicio.jpg');">
+      <div class="container">
+        <span class="eyebrow on-dark">Ingeniería Web · UTP</span>
+        <h1>La inteligencia artificial ya está ayudando a cuidar tu salud</h1>
+        <p>En MediIA explicamos, en un lenguaje sencillo, cómo los algoritmos que aprenden de imágenes, análisis y registros clínicos apoyan a médicos, enfermeras y pacientes en hospitales y centros de salud de todo el mundo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#aplicaciones">Explorar aplicaciones</a>
+          <a class="btn btn-outline" href="contacto.html">Escríbenos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="que-es" class="intro-section">
+      <div class="container">
+        <div class="card intro-panel">
+          <div class="intro-panel-text">
+            <span class="eyebrow">¿Qué es la IA en salud?</span>
+            <h2>Un apoyo para el personal de salud, no un reemplazo</h2>
+            <p>La IA en salud usa algoritmos que aprenden de imágenes, historiales clínicos y señales de dispositivos portátiles para encontrar patrones difíciles de detectar a simple vista. Según la OPS/OMS, ya se aplica en diagnóstico, tratamiento, gestión hospitalaria e investigación —siempre bajo la supervisión de un profesional humano.</p>
+          </div>
+
+          <div class="intro-panel-side">
+            <div class="image-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Espacio para imagen</span>
+            </div>
+
+            <div class="mini-stat" aria-labelledby="aside-dato-rapido">
+              <h3 id="aside-dato-rapido">Dato rápido</h3>
+              <div class="stat">
+                <strong>4 áreas</strong>
+                <span>La OPS identifica al menos cuatro grandes usos de la IA en salud: diagnóstico, tratamiento, gestión hospitalaria e investigación.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="noticias">
+      <div class="container">
+        <div class="section-head with-stat">
+          <div class="section-head-text">
+            <span class="eyebrow">Actualidad</span>
+            <h2>Noticias recientes</h2>
+            <p>Avances reales de instituciones médicas y organismos de salud sobre el uso de la IA en la práctica clínica.</p>
+          </div>
+        </div>
+
+        <fieldset class="news-filters">
+          <legend class="visually-hidden">Filtrar noticias por categoría</legend>
+          <button type="button" class="filter-pill active" data-filter="todas">Todas <span class="filter-count">8</span></button>
+          <button type="button" class="filter-pill" data-filter="diagnostico">Diagnóstico</button>
+          <button type="button" class="filter-pill" data-filter="regulacion">Regulación</button>
+          <button type="button" class="filter-pill" data-filter="panama">Panamá</button>
+        </fieldset>
+
+        <div class="news-stats-bar">
+          <div class="mini-stat-item">
+            <strong>81 %</strong>
+            <span>de médicos en EE. UU. usa IA en su práctica <cite>(AMA, 2026)</cite></span>
+          </div>
+          <div class="mini-stat-item">
+            <strong>+1 500</strong>
+            <span>dispositivos médicos con IA autorizados por la FDA <cite>(2026)</cite></span>
+          </div>
+          <div class="mini-stat-item">
+            <strong>175 000</strong>
+            <span>mujeres en el mayor estudio de IA en tamizaje del NHS <cite>(2026)</cite></span>
+          </div>
+        </div>
+
+        <div class="news-layout">
+          <div class="news-carousel">
+            <div class="carousel-track">
+              <article class="carousel-slide card active" data-category="diagnostico" data-index="0">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Diagnóstico · Oncología</span>
+                  <img src="img/noticia-1.svg" alt="Ilustración de una tomografía abdominal analizada por inteligencia artificial">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">Mayo Clinic · abril 2026</p>
+                  <h3>IA detecta cáncer de páncreas hasta 3 años antes del diagnóstico</h3>
+                  <p>El modelo REDMOD analizó cerca de 2 000 tomografías leídas como normales y detectó el 73 % de los cánceres prediagnósticos, casi el doble que los especialistas.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-ai-detects-pancreatic-cancer-up-to-3-years-before-diagnosis-in-landmark-validation-study/" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 4 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="diagnostico" data-index="1">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Diagnóstico · Mamografía</span>
+                  <img src="img/noticia-2.svg" alt="Ilustración de una mamografía con puntos de análisis de inteligencia artificial">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">Imperial College · NHS · marzo 2026</p>
+                  <h3>IA iguala o supera a radiólogos en el tamizaje de cáncer de mama</h3>
+                  <p>Un estudio con datos de 175 000 mujeres del NHS —el mayor de su tipo— mostró que la IA detectó más cánceres invasivos, con menos falsos positivos y hasta un tercio menos de tiempo de lectura por caso.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.imperial.ac.uk/news/articles/global-health-innovation/2026/new-research-conducted-using-google-ai-can-match-or-exceed-radiologists-in-detecting-cancer-in-breast-scans-/" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 3 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="panama" data-index="2">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Panamá · Telesalud</span>
+                  <img src="img/noticia-3.svg" alt="Ilustración del mapa de Panamá con una señal de pulso representando telesalud">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">La Estrella de Panamá · 2026</p>
+                  <h3>Panamá impulsa el uso de IA en su red pública de salud</h3>
+                  <p>Herramientas como RAISA, del Programa Nacional de Telesalud, ya apoyan el monitoreo de enfermedades crónicas y la interpretación de resultados de laboratorio para reducir tiempos de espera.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.laestrella.com.pa/vida-y-cultura/ciencia/inteligencia-artificial-en-la-salud-amenaza-o-aliada-para-salvar-vidas-en-panama-JL25848706" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 3 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="diagnostico" data-index="3">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Diagnóstico · Mama</span>
+                  <img src="img/noticia-4.svg" alt="Gráfico de puntaje de riesgo mamográfico creciente a lo largo de varios años">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">RSNA · junio 2026</p>
+                  <h3>IA podría alertar sobre cáncer de mama hasta 6 años antes</h3>
+                  <p>Un estudio de la RSNA halló que cerca del 20 % de los cánceres de mama ya muestran señales visibles para la IA hasta seis años antes del diagnóstico, con puntajes de riesgo que aumentan de forma sostenida con el tiempo.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.rsna.org/news/2026/june/ai-flags-breast-cancer-early" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 3 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="regulacion" data-index="4">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Regulación · FDA</span>
+                  <img src="img/noticia-5.svg" alt="Ilustración de un documento regulatorio con sello de aprobación">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">FDA · agosto 2026</p>
+                  <h3>La FDA abre consulta para regular dispositivos con IA generativa</h3>
+                  <p>El documento de discusión de la FDA propone un marco de evaluación de riesgo en dos ejes para los dispositivos médicos con IA generativa, una categoría que hoy no tiene una vía de regulación establecida.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 3 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="panama" data-index="5">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Panamá · Congresos</span>
+                  <img src="img/noticia-6.svg" alt="Ilustración de profesionales de salud en una conferencia científica">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">La Prensa · julio 2026</p>
+                  <h3>Hospiten Paitilla dedica su Jornada Científica a la IA en salud</h3>
+                  <p>La 51ª Jornada Científica de Hospiten Paitilla reunió a estudiantes y profesionales de la salud para discutir los principales retos, oportunidades y el futuro de la inteligencia artificial en los sistemas de salud.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.prensa.com/contenido-de-marcas/la-inteligencia-artificial-dejo-de-ser-el-futuro-especialistas-mostraron-su-impacto-en-la-practica-medica/" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 3 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="organismos" data-index="6">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Organismos · OMS</span>
+                  <img src="img/noticia-7.svg" alt="Ilustración de un globo terráqueo representando la gobernanza global de la IA en salud">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">OMS · junio 2026</p>
+                  <h3>La OMS analiza oportunidades y riesgos de la IA en políticas de salud</h3>
+                  <p>Un documento de discusión de la OMS examina cómo la IA ya influye en el diseño de políticas de salud basadas en evidencia, y advierte sobre sesgos de datos, brechas digitales y riesgos de ciberseguridad.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.who.int/news/item/02-06-2026-new-who-discussion-paper-sets-out-opportunities-and-risks-of-ai-in-evidence-informed-health-policy" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 4 min</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-slide card" data-category="tendencias" data-index="7">
+                <div class="carousel-media">
+                  <span class="carousel-tag">Tendencias · AMA</span>
+                  <img src="img/noticia-8.svg" alt="Gráfico de barras ascendente representando el aumento del uso de IA entre médicos">
+                  <div class="carousel-nav">
+                    <button type="button" class="carousel-arrow prev" aria-label="Noticia anterior">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="carousel-arrow next" aria-label="Noticia siguiente">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-body">
+                  <p class="news-meta">AMA · marzo 2026</p>
+                  <h3>El uso de IA entre médicos se duplica desde 2023</h3>
+                  <p>Una encuesta de la Asociación Médica Americana encontró que el 81 % de los médicos en EE. UU. ya usa IA en su práctica profesional, más del doble que en 2023.</p>
+                  <div class="carousel-footer">
+                    <a class="btn btn-primary btn-sm" href="https://www.ama-assn.org/practice-management/digital-health/more-80-physicians-use-ai-professionally-ama-survey" target="_blank" rel="noopener noreferrer">
+                      Leer noticia completa
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                    <span class="read-time">Lectura de 2 min</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-thumbs">
+              <button type="button" class="thumb active" data-index="0" data-category="diagnostico">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Cáncer de páncreas</strong><small>Mayo Clinic</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="1" data-category="diagnostico">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Tamizaje de mama</strong><small>NHS · Imperial</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="2" data-category="panama">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg>
+                </span>
+                <span class="thumb-text"><strong>IA en la red pública</strong><small>Panamá</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="3" data-category="diagnostico">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Alerta 6 años antes</strong><small>RSNA</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="4" data-category="regulacion">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Consulta de la FDA</strong><small>FDA</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="5" data-category="panama">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2"/><circle cx="17" cy="7" r="3"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Jornada Hospiten</strong><small>Panamá</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="6" data-category="organismos">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Políticas de salud</strong><small>OMS</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+              <button type="button" class="thumb" data-index="7" data-category="tendencias">
+                <span class="thumb-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg>
+                </span>
+                <span class="thumb-text"><strong>Uso duplicado</strong><small>AMA</small></span>
+                <span class="thumb-progress"></span>
+              </button>
+            </div>
+          </div>
+
+          <aside class="news-sidebar card" aria-label="Más noticias">
+            <div class="sidebar-head">
+              <h3>Más noticias</h3>
+              <span class="live-dot"><span></span>Actualizado</span>
+            </div>
+
+            <fieldset class="sidebar-tabs">
+              <legend class="visually-hidden">Filtrar más noticias</legend>
+              <button type="button" class="tab active" data-tab="recientes">Recientes</button>
+              <button type="button" class="tab" data-tab="panama">Panamá</button>
+              <button type="button" class="tab" data-tab="regulacion">Regulación</button>
+            </fieldset>
+
+            <ul class="sidebar-list">
+              <li data-tags="recientes regulacion">
+                <a class="sidebar-item" href="https://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices" target="_blank" rel="noopener noreferrer">
+                  <span class="sidebar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+                  </span>
+                  <span>
+                    <span class="sidebar-cat">Regulación</span>
+                    <h4>La FDA abre consulta para regular dispositivos con IA generativa</h4>
+                    <span class="sidebar-meta">18 ago 2026 · FDA</span>
+                  </span>
+                </a>
+              </li>
+              <li data-tags="recientes">
+                <a class="sidebar-item" href="https://www.rsna.org/news/2026/june/ai-flags-breast-cancer-early" target="_blank" rel="noopener noreferrer">
+                  <span class="sidebar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/></svg>
+                  </span>
+                  <span>
+                    <span class="sidebar-cat">Diagnóstico</span>
+                    <h4>IA podría alertar sobre cáncer de mama hasta 6 años antes</h4>
+                    <span class="sidebar-meta">jun 2026 · RSNA</span>
+                  </span>
+                </a>
+              </li>
+              <li data-tags="recientes panama">
+                <a class="sidebar-item" href="https://www.prensa.com/contenido-de-marcas/la-inteligencia-artificial-dejo-de-ser-el-futuro-especialistas-mostraron-su-impacto-en-la-practica-medica/" target="_blank" rel="noopener noreferrer">
+                  <span class="sidebar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2"/><circle cx="17" cy="7" r="3"/></svg>
+                  </span>
+                  <span>
+                    <span class="sidebar-cat">Panamá</span>
+                    <h4>Hospiten Paitilla dedica su Jornada Científica a la IA en salud</h4>
+                    <span class="sidebar-meta">jul 2026 · La Prensa</span>
+                  </span>
+                </a>
+              </li>
+              <li data-tags="recientes">
+                <a class="sidebar-item" href="https://www.who.int/news/item/02-06-2026-new-who-discussion-paper-sets-out-opportunities-and-risks-of-ai-in-evidence-informed-health-policy" target="_blank" rel="noopener noreferrer">
+                  <span class="sidebar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+                  </span>
+                  <span>
+                    <span class="sidebar-cat">Organismos</span>
+                    <h4>La OMS analiza oportunidades y riesgos de la IA en políticas de salud</h4>
+                    <span class="sidebar-meta">jun 2026 · OMS</span>
+                  </span>
+                </a>
+              </li>
+              <li data-tags="recientes">
+                <a class="sidebar-item" href="https://www.ama-assn.org/practice-management/digital-health/more-80-physicians-use-ai-professionally-ama-survey" target="_blank" rel="noopener noreferrer">
+                  <span class="sidebar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg>
+                  </span>
+                  <span>
+                    <span class="sidebar-cat">Tendencias</span>
+                    <h4>El uso de IA entre médicos se duplica desde 2023</h4>
+                    <span class="sidebar-meta">mar 2026 · AMA</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <a class="btn btn-ghost btn-block" href="https://www.paho.org/es/inteligencia-artificial-para-salud/documentacion-tecnica-sobre-ia" target="_blank" rel="noopener noreferrer">
+              Ver más recursos de la OPS
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </aside>
+        </div>
+
+        <div class="card aside-block news-ext-links">
+          <h2>Enlaces externos</h2>
+          <div class="ext-links two-col">
+            <a class="ext-link" href="https://www.who.int/health-topics/artificial-intelligence" target="_blank" rel="noopener noreferrer">
+              OMS — IA para la salud
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="ext-link" href="https://www.paho.org/es/inteligencia-artificial-para-salud" target="_blank" rel="noopener noreferrer">
+              OPS — Programa de IA
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+          <p class="aside-note">Se abren en una pestaña nueva.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 14l4-4 3 3 5-6 6 6"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="aplicaciones">
+      <div class="container">
+        <div class="section-head with-stat">
+          <div class="section-head-text">
+            <span class="eyebrow">Áreas de aplicación</span>
+            <h2>¿Dónde se usa la IA en salud?</h2>
+            <p>Del diagnóstico por imagen a la cirugía asistida, estas son las áreas donde la IA ya tiene mayor impacto clínico.</p>
+          </div>
+          <div class="section-head-stat">
+            <span class="divider-v" aria-hidden="true"></span>
+            <strong>8</strong>
+            <span>áreas con impacto clínico</span>
+          </div>
+        </div>
+
+        <ul class="app-grid">
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 14l4-4 3 3 5-6 6 6"/></svg>
+              </div>
+              <span class="app-index">01</span>
+            </div>
+            <h3>Diagnóstico por imagen</h3>
+            <p>Radiografías, TAC, resonancias y fotos de piel interpretadas con apoyo de visión por computadora.</p>
+            <span class="app-tag">Radiología</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg>
+              </div>
+              <span class="app-index">02</span>
+            </div>
+            <h3>Detección temprana</h3>
+            <p>Identificación de señales de enfermedad antes de la aparición de síntomas.</p>
+            <span class="app-tag">Prevención</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+              </div>
+              <span class="app-index">03</span>
+            </div>
+            <h3>Tratamientos personalizados</h3>
+            <p>Terapias y dosis ajustadas al perfil genético e historial de cada paciente.</p>
+            <span class="app-tag">Medicina de precisión</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2"/></svg>
+              </div>
+              <span class="app-index">04</span>
+            </div>
+            <h3>Telemedicina y monitoreo</h3>
+            <p>Asistentes virtuales y sensores portátiles que vigilan signos vitales a distancia.</p>
+            <span class="app-tag">Atención remota</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6L4 20a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-12V2"/><path d="M8 2h8"/></svg>
+              </div>
+              <span class="app-index">05</span>
+            </div>
+            <h3>Descubrimiento de fármacos</h3>
+            <p>Modelos que aceleran la búsqueda de nuevas moléculas y reducen el tiempo de investigación.</p>
+            <span class="app-tag">Investigación</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span class="app-index">06</span>
+            </div>
+            <h3>Asistentes clínicos</h3>
+            <p>Automatización de notas médicas, citas y tareas administrativas.</p>
+            <span class="app-tag">Productividad</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.775-3.775a6 6 0 0 1-7.94 7.94l-6.616 6.216a2.121 2.121 0 0 1-3-3l6.216-6.616a6 6 0 0 1 7.94-7.94z"/></svg>
+              </div>
+              <span class="app-index">07</span>
+            </div>
+            <h3>Cirugía y robótica asistida</h3>
+            <p>Sistemas robótico-quirúrgicos que aumentan la precisión del cirujano en operaciones delicadas.</p>
+            <span class="app-tag">Cirugía</span>
+          </li>
+          <li class="card app-card">
+            <div class="app-card-top">
+              <div class="app-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+              </div>
+              <span class="app-index">08</span>
+            </div>
+            <h3>Gestión hospitalaria</h3>
+            <p>Predicción de la demanda de camas, turnos y recursos para hospitales más eficientes.</p>
+            <span class="app-tag">Administración</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="multimedia">
+      <div class="container">
+        <div class="section-head centered">
+          <span class="eyebrow">Multimedia</span>
+          <h2>Una charla real sobre IA en medicina</h2>
+          <p>Eric Topol, cardiólogo e investigador, explica en TED cómo los modelos de IA ya interpretan imágenes médicas al nivel de especialistas humanos.</p>
+        </div>
+
+        <div class="card video-embed-card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/ll5LY7wI_Xc" title="Can AI catch what doctors miss? — Eric Topol (TED)" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <div class="video-embed-body">
+            <p class="news-meta">TED · Eric Topol</p>
+            <h3>¿Puede la IA detectar lo que los médicos no ven?</h3>
+            <p>Charla en inglés (con subtítulos disponibles en español, activables en el reproductor) sobre cómo los modelos de IA interpretan radiografías, retinas y otras imágenes médicas al nivel de especialistas —y en ciertos casos, detectan detalles que el ojo humano no percibe.</p>
+            <a class="news-link" href="https://www.ted.com/talks/eric_topol_can_ai_catch_what_doctors_miss" target="_blank" rel="noopener noreferrer">
+              Ver la charla completa en TED
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="img/logo.png" alt="Logo de MediIA">
+            MediIA
+          </div>
+          <p>Proyecto académico sobre IA en el ámbito médico, desarrollado para el curso de Ingeniería Web.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/icons/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/icons/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="img/icons/linkedin.png" alt=""></a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="img/icons/twitter.png" alt=""></a>
+          </div>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fuentes</h3>
+          <ul>
+            <li><a href="https://www.who.int/health-topics/artificial-intelligence" target="_blank" rel="noopener noreferrer">OMS</a></li>
+            <li><a href="https://www.paho.org/es/inteligencia-artificial-para-salud" target="_blank" rel="noopener noreferrer">OPS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Proyecto</h3>
+          <ul>
+            <li>UTP · FISC</li>
+            <li>Ingeniería Web</li>
+            <li>Grupo 1SF134</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 · UTP · FISC · Ingeniería Web · Grupo 1SF134 · Fuentes &amp; Orellana</p>
+    </div>
+  </footer>
+
+  <script src="js/noticias.js"></script>
+</body>
+</html>

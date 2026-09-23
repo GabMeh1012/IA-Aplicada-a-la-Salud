@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="n4Title">
+  <title id="n4Title">Gráfico de puntaje de riesgo mamográfico creciente a lo largo de varios años</title>
+  <defs>
+    <linearGradient id="n4Bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0d6e6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#n4Bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.15">
+    <line x1="0" y1="60" x2="400" y2="60"/>
+    <line x1="0" y1="120" x2="400" y2="120"/>
+    <line x1="0" y1="180" x2="400" y2="180"/>
+  </g>
+  <polyline points="40,190 110,170 180,150 250,110 320,70 360,45" fill="none" stroke="#5eead4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#5eead4">
+    <circle cx="40" cy="190" r="4"/>
+    <circle cx="110" cy="170" r="4"/>
+    <circle cx="180" cy="150" r="4"/>
+    <circle cx="250" cy="110" r="4"/>
+    <circle cx="320" cy="70" r="5"/>
+  </g>
+  <circle cx="320" cy="70" r="12" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <text x="150" y="35" font-family="Arial, sans-serif" font-size="13" fill="#e6f4f3" opacity="0.85">Puntaje de riesgo · 6 años antes del diagnóstico</text>
+  <g stroke="#e6f4f3" stroke-opacity="0.5">
+    <path d="M60 60a1 1 0 1 1 0 0z"/>
+  </g>
+</svg>

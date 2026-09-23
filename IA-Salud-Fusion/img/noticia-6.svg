@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="n6Title">
+  <title id="n6Title">Grupo de profesionales de salud en una conferencia científica sobre inteligencia artificial</title>
+  <defs>
+    <linearGradient id="n6Bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d6e6e"/>
+      <stop offset="100%" stop-color="#134e6f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#n6Bg)"/>
+  <g fill="#e6f4f3" fill-opacity="0.85">
+    <circle cx="150" cy="110" r="16"/>
+    <path d="M120 165c0 -18 14 -30 30 -30s30 12 30 30z"/>
+    <circle cx="210" cy="100" r="20"/>
+    <path d="M172 165c0 -22 17 -37 38 -37s38 15 38 37z"/>
+    <circle cx="270" cy="112" r="14"/>
+    <path d="M244 163c0 -16 12 -27 26 -27s26 11 26 27z"/>
+  </g>
+  <g stroke="#5eead4" stroke-width="1.5" opacity="0.6">
+    <line x1="150" y1="94" x2="210" y2="80"/>
+    <line x1="210" y1="80" x2="270" y2="98"/>
+  </g>
+  <text x="120" y="45" font-family="Arial, sans-serif" font-size="13" fill="#e6f4f3" opacity="0.85">51ª Jornada Científica</text>
+  <g fill="#5eead4" opacity="0.7">
+    <circle cx="60" cy="60" r="3"/>
+    <circle cx="340" cy="70" r="3"/>
+    <circle cx="330" cy="190" r="3"/>
+  </g>
+</svg>

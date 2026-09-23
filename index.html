@@ -1,17 +1,283 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>IA aplicada a la Salud
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA + Salud · Inteligencia Artificial aplicada a la Salud</title>
+  <meta name="description" content="Cómo la inteligencia artificial ayuda a detectar enfermedades antes, apoyar a los médicos y acercar la atención a más personas. Proyecto académico UTP.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-        </title>
-    </head>
-    
-    
-    <body>
-        <h1>
-            IA aplicada a la Salud
-        </h1>
-    </body>
-    
-    </html>
+  <header class="site-header">
+    <nav class="nav-bar container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#0f766e"/>
+          <path d="M32 14v10M32 40v10M14 32h10M40 32h10" stroke="#5eead4" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="10" fill="#e6f4f3"/>
+          <path d="M28 32h8M32 28v8" stroke="#0f766e" stroke-width="2.6" stroke-linecap="round"/>
+        </svg>
+        IA + Salud
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle">
+      <label for="navToggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <span class="eyebrow">Ingeniería Web · UTP</span>
+          <h1>Inteligencia Artificial aplicada a la Salud</h1>
+          <p>Cómo los algoritmos que aprenden de imágenes, análisis y registros clínicos están ayudando a detectar enfermedades antes, apoyar a los médicos y acercar la atención a más personas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#aplicaciones">Explorar aplicaciones</a>
+            <a class="btn btn-outline" href="acerca.html">Conocer más</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="img/hero.svg" alt="Ilustración de un profesional de salud interactuando con una interfaz de inteligencia artificial que muestra signos vitales y una validación clínica">
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias">
+      <div class="container content-grid">
+        <div>
+          <div class="section-head">
+            <span class="eyebrow">Actualidad</span>
+            <h2>Noticias recientes</h2>
+            <p>Avances reales de instituciones médicas y organismos de salud sobre el uso de la IA en la práctica clínica.</p>
+          </div>
+
+          <div class="stack">
+            <article class="card news-card">
+              <img src="img/noticia-1.svg" alt="Ilustración de una tomografía abdominal analizada por inteligencia artificial">
+              <div>
+                <p class="news-meta">Mayo Clinic · abril 2026</p>
+                <h3>IA detecta cáncer de páncreas hasta 3 años antes del diagnóstico</h3>
+                <p>El modelo REDMOD, de Mayo Clinic, analizó cerca de 2 000 tomografías originalmente leídas como normales y detectó el 73 % de los cánceres prediagnósticos, casi el doble que los especialistas.</p>
+                <a class="news-link" href="https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-ai-detects-pancreatic-cancer-up-to-3-years-before-diagnosis-in-landmark-validation-study/" target="_blank" rel="noopener noreferrer">
+                  Leer más (enlace externo)
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card news-card">
+              <img src="img/noticia-2.svg" alt="Ilustración de una mamografía con puntos de análisis de inteligencia artificial">
+              <div>
+                <p class="news-meta">Imperial College · NHS · marzo 2026</p>
+                <h3>IA iguala o supera a radiólogos en el tamizaje de cáncer de mama</h3>
+                <p>Un estudio con datos de 175 000 mujeres del NHS —el mayor de su tipo— mostró que la IA detectó más cánceres invasivos, con menos falsos positivos y hasta un tercio menos de tiempo de lectura por caso.</p>
+                <a class="news-link" href="https://www.imperial.ac.uk/news/articles/global-health-innovation/2026/new-research-conducted-using-google-ai-can-match-or-exceed-radiologists-in-detecting-cancer-in-breast-scans-/" target="_blank" rel="noopener noreferrer">
+                  Leer más (enlace externo)
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card news-card">
+              <img src="img/noticia-3.svg" alt="Ilustración del mapa de Panamá con una señal de pulso representando telesalud">
+              <div>
+                <p class="news-meta">La Estrella de Panamá · 2026</p>
+                <h3>Panamá impulsa el uso de IA en su red pública de salud</h3>
+                <p>Herramientas como RAISA, del Programa Nacional de Telesalud, ya apoyan el monitoreo de enfermedades crónicas y la interpretación de resultados de laboratorio para reducir tiempos de espera.</p>
+                <a class="news-link" href="https://www.laestrella.com.pa/vida-y-cultura/ciencia/inteligencia-artificial-en-la-salud-amenaza-o-aliada-para-salvar-vidas-en-panama-JL25848706" target="_blank" rel="noopener noreferrer">
+                  Leer más (enlace externo)
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card aside-block">
+            <h2>Datos clave</h2>
+            <div class="stat">
+              <strong>81 %</strong>
+              <span>de médicos en EE. UU. ya usa IA en su práctica clínica <cite>(AMA, 2026)</cite></span>
+            </div>
+            <div class="stat">
+              <strong>+1 500</strong>
+              <span>dispositivos médicos con IA autorizados por la FDA <cite>(2026)</cite></span>
+            </div>
+            <div class="stat">
+              <strong>3</strong>
+              <span>pilares de la estrategia ética de la OMS para IA en salud</span>
+            </div>
+          </div>
+
+          <div class="card aside-block">
+            <h2>Enlaces externos</h2>
+            <div class="ext-links">
+              <a class="ext-link" href="https://www.who.int/health-topics/artificial-intelligence" target="_blank" rel="noopener noreferrer">
+                OMS — IA para la salud
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+              <a class="ext-link" href="https://www.paho.org/es/inteligencia-artificial-para-salud" target="_blank" rel="noopener noreferrer">
+                OPS — Programa de IA
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+            <p class="aside-note">Se abren en una pestaña nueva.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="aplicaciones">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Áreas de aplicación</span>
+          <h2>¿Dónde se usa la IA en salud?</h2>
+          <p>Del diagnóstico por imagen al descubrimiento de fármacos, estas son las áreas donde la IA ya tiene mayor impacto clínico.</p>
+        </div>
+
+        <ul class="app-grid">
+          <li class="card app-card">
+            <div class="app-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 14l4-4 3 3 5-6 6 6"/></svg>
+            </div>
+            <h3>Diagnóstico por imagen</h3>
+            <p>Radiografías, TAC y resonancias interpretadas con apoyo de visión por computadora.</p>
+          </li>
+          <li class="card app-card">
+            <div class="app-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg>
+            </div>
+            <h3>Detección temprana</h3>
+            <p>Identificación de señales de enfermedad antes de la aparición de síntomas.</p>
+          </li>
+          <li class="card app-card">
+            <div class="app-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+            </div>
+            <h3>Medicina personalizada</h3>
+            <p>Recomendaciones de tratamiento ajustadas al historial y los datos de cada paciente.</p>
+          </li>
+          <li class="card app-card">
+            <div class="app-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2"/></svg>
+            </div>
+            <h3>Monitoreo remoto</h3>
+            <p>Sensores y dispositivos portátiles que siguen signos vitales a distancia.</p>
+          </li>
+          <li class="card app-card">
+            <div class="app-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6L4 20a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-12V2"/><path d="M8 2h8"/></svg>
+            </div>
+            <h3>Descubrimiento de fármacos</h3>
+            <p>Análisis de compuestos y predicción de su efectividad terapéutica.</p>
+          </li>
+          <li class="card app-card">
+            <div class="app-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Asistentes clínicos</h3>
+            <p>Automatización de notas médicas, citas y tareas administrativas.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="multimedia">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Multimedia</span>
+          <h2>Recursos para profundizar</h2>
+          <p>Webinarios y documentación técnica de la OPS/OMS sobre inteligencia artificial en salud pública.</p>
+        </div>
+
+        <div class="media-grid">
+          <div class="card media-card">
+            <div class="media-thumb">
+              <div class="play-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="media-body">
+              <p class="news-meta">Videoconferencia · OPS</p>
+              <h3>Serie de webinarios: Inteligencia Artificial en Salud Pública</h3>
+              <p>Ciclo certificado del Programa de Alfabetización Digital en Salud de la OPS, con especialistas en gobernanza de datos y adopción de IA en sistemas de salud.</p>
+              <a class="news-link" href="https://www.paho.org/en/news/29-10-2025-digital-health-cycle-artificial-intelligence-public-health-now-available-youtube" target="_blank" rel="noopener noreferrer">
+                Ver en el canal de la OPS
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="card audio-card">
+            <div class="audio-visual" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h3>Documentación técnica sobre IA en salud</h3>
+            <p>Guías, herramientas de autoevaluación y lecturas recomendadas por la OPS/OMS para equipos de salud que están adoptando IA.</p>
+            <a class="news-link" href="https://www.paho.org/es/inteligencia-artificial-para-salud/documentacion-tecnica-sobre-ia" target="_blank" rel="noopener noreferrer">
+              Ver documentación
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+              <rect width="64" height="64" rx="14" fill="#14b8a6"/>
+              <path d="M32 14v10M32 40v10M14 32h10M40 32h10" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="32" cy="32" r="10" fill="#0f172a"/>
+            </svg>
+            IA + Salud
+          </div>
+          <p>Proyecto académico sobre IA en el ámbito médico.</p>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Redes sociales</h3>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3-.4-4.5c-.2-.9-1-1.6-1.9-1.8C18 5.3 12 5.3 12 5.3s-6 0-7.7.4c-.9.2-1.7.9-1.9 1.8C2 9 2 12 2 12s0 3 .4 4.5c.2.9 1 1.6 1.9 1.8 1.7.4 7.7.4 7.7.4s6 0 7.7-.4c.9-.2 1.7-.9 1.9-1.8.4-1.5.4-4.5.4-4.5z"/><path d="M10 15l5-3-5-3z" fill="#0f172a"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 8.98h4v12H3zM9.5 8.98H13v1.64h.05c.5-.9 1.7-1.85 3.5-1.85 3.74 0 4.45 2.46 4.45 5.66v6.55h-4v-5.8c0-1.38-.03-3.15-1.92-3.15-1.93 0-2.22 1.5-2.22 3.05v5.9h-4z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="https://www.who.int/health-topics/artificial-intelligence" target="_blank" rel="noopener noreferrer">OMS</a></li>
+            <li><a href="https://www.paho.org/es/inteligencia-artificial-para-salud" target="_blank" rel="noopener noreferrer">OPS</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 · UTP · FISC · Ingeniería Web · Grupo 1SF134 · [Apellido 1] &amp; [Apellido 2]</p>
+    </div>
+  </footer>
+</body>
+</html>

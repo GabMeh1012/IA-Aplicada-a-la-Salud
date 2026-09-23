@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Ilustración de un profesional de salud interactuando con una interfaz de inteligencia artificial</title>
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#134e6f"/>
+    </linearGradient>
+    <linearGradient id="heroCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="pulseLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#99f6e4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" rx="24" fill="url(#heroBg)"/>
+
+  <g opacity="0.15" stroke="#ffffff" stroke-width="1">
+    <circle cx="320" cy="240" r="190"/>
+    <circle cx="320" cy="240" r="150"/>
+    <circle cx="320" cy="240" r="110"/>
+  </g>
+
+  <g opacity="0.5" stroke="#5eead4" stroke-width="1.5" fill="none">
+    <path d="M90 90 L160 90 L160 150 L230 150"/>
+    <path d="M540 400 L470 400 L470 340 L410 340"/>
+    <circle cx="90" cy="90" r="4" fill="#5eead4"/>
+    <circle cx="230" cy="150" r="4" fill="#5eead4"/>
+    <circle cx="540" cy="400" r="4" fill="#5eead4"/>
+    <circle cx="410" cy="340" r="4" fill="#5eead4"/>
+  </g>
+
+  <rect x="150" y="120" width="340" height="240" rx="20" fill="url(#heroCard)" stroke="#ffffff" stroke-opacity="0.25"/>
+
+  <g transform="translate(180,150)">
+    <rect x="0" y="0" width="280" height="26" rx="6" fill="#ffffff" fill-opacity="0.18"/>
+    <circle cx="14" cy="13" r="5" fill="#f87171"/>
+    <circle cx="34" cy="13" r="5" fill="#fbbf24"/>
+    <circle cx="54" cy="13" r="5" fill="#4ade80"/>
+  </g>
+
+  <g transform="translate(180,190)">
+    <polyline points="0,60 40,60 55,20 75,100 95,40 115,60 160,60 175,30 195,80 215,60 280,60"
+      fill="none" stroke="url(#pulseLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(180,265)" fill="#ffffff" fill-opacity="0.85">
+    <rect x="0" y="0" width="60" height="8" rx="4"/>
+    <rect x="0" y="16" width="130" height="8" rx="4" fill-opacity="0.5"/>
+    <rect x="0" y="32" width="90" height="8" rx="4" fill-opacity="0.5"/>
+  </g>
+
+  <g transform="translate(190,270)">
+    <rect x="150" y="-10" width="26" height="26" rx="13" fill="#2dd4bf"/>
+    <path d="M158 3 l5 5 l8 -9" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(230,330)">
+    <circle cx="90" cy="70" r="46" fill="#0e3b3a"/>
+    <circle cx="90" cy="46" r="20" fill="#ffe4c4"/>
+    <path d="M50 96 q40 -34 80 0 v20 h-80 z" fill="#e6f4f3"/>
+    <rect x="78" y="60" width="24" height="30" rx="8" fill="#0f766e"/>
+    <circle cx="90" cy="98" r="6" fill="#0f766e"/>
+    <path d="M90 92 v-40" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(60,320)" opacity="0.9">
+    <circle r="34" fill="#115e59"/>
+    <path d="M-14 4 h10 l6 -14 l8 22 l6 -12 h4" stroke="#5eead4" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(560,150)" opacity="0.9">
+    <circle r="30" fill="#134e6f"/>
+    <path d="M-10 -8 a10 10 0 1 1 -1 12" stroke="#99f6e4" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="3" fill="#99f6e4"/>
+  </g>
+</svg>

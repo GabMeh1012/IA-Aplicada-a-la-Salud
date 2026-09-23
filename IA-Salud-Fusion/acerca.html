@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de · MediIA</title>
+  <meta name="description" content="Cómo aprende una IA médica, dónde ya se usa, mitos y realidades, los 6 principios éticos de la OMS y los hitos recientes de su regulación.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav-bar container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Logo de MediIA">
+        <span class="brand-text">
+          <strong>MediIA</strong>
+          <span>IA en la Salud</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle">
+      <label for="navToggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html" aria-current="page">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero-photo" style="background-image: url('img/hero-acerca.jpg');">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow on-dark">Introducción</span>
+          <h1>Acerca de la IA en la salud</h1>
+          <p>La inteligencia artificial aprende de imágenes, análisis y registros clínicos para ayudar a detectar enfermedades antes, personalizar tratamientos y acercar la atención a más personas. Aquí explicamos cómo funciona, dónde se usa y qué retos éticos plantea.</p>
+          <div class="hero-chips">
+            <a class="hero-chip" href="#como-funciona">Cómo funciona</a>
+            <a class="hero-chip" href="#aplicaciones">Aplicaciones</a>
+            <a class="hero-chip" href="#mito-realidad">Mito o realidad</a>
+            <a class="hero-chip" href="#etica">Ética</a>
+            <a class="hero-chip" href="#hitos">Hitos</a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-card">
+            <strong>81 %</strong>
+            <span>de los médicos en EE. UU. ya usa IA en su práctica <cite>(AMA, 2026)</cite></span>
+          </div>
+          <div class="hero-stat-card">
+            <strong>73 %</strong>
+            <span>de cánceres de páncreas detectados antes del diagnóstico por el modelo REDMOD <cite>(Mayo Clinic)</cite></span>
+          </div>
+          <div class="hero-stat-card">
+            <strong>6</strong>
+            <span>principios éticos que propone la OMS para usar IA en salud</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Paso a paso</span>
+          <h2>¿Cómo aprende una IA médica?</h2>
+          <p>Toda herramienta de IA en salud pasa por cuatro etapas antes de llegar a un hospital. Selecciona cada paso para conocerlo.</p>
+        </div>
+
+        <div class="stepper-track" role="tablist" aria-label="Etapas del desarrollo de una IA médica">
+          <span class="step-line-fill" id="stepLineFill"></span>
+          <button type="button" class="step-item active" data-step="1">
+            <span class="step-circle">1</span>
+            <strong>Datos</strong>
+            <small>Se reúne la información</small>
+          </button>
+          <button type="button" class="step-item" data-step="2">
+            <span class="step-circle">2</span>
+            <strong>Entrenamiento</strong>
+            <small>Aprende patrones</small>
+          </button>
+          <button type="button" class="step-item" data-step="3">
+            <span class="step-circle">3</span>
+            <strong>Validación</strong>
+            <small>Se prueba y se aprueba</small>
+          </button>
+          <button type="button" class="step-item" data-step="4">
+            <span class="step-circle">4</span>
+            <strong>Uso clínico</strong>
+            <small>Apoya al médico</small>
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="step-panel" data-step-panel="1">
+            <div class="step-panel-text">
+              <h3>1. Datos: la materia prima del modelo</h3>
+              <p>Todo empieza con datos clínicos reales: imágenes médicas, resultados de laboratorio, historiales y señales de dispositivos portátiles, aportados por hospitales y centros de investigación bajo protocolos de privacidad. Mientras más diversos sean estos datos —en edades, sexos y orígenes— más confiable será el modelo final.</p>
+              <p>Antes de entrenar cualquier modelo, los datos se anonimizan y se etiquetan junto a especialistas, para que el algoritmo aprenda a partir de casos ya confirmados por un profesional.</p>
+            </div>
+            <div class="step-example">
+              <h4>Ejemplo real</h4>
+              <p>El estudio del NHS que evaluó IA en tamizaje de cáncer de mama usó datos de 175 000 mujeres de varios centros, para asegurar que el modelo funcionara en poblaciones diversas.</p>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-step-prev disabled>← Anterior</button>
+              <button type="button" class="btn btn-primary" data-step-next>Siguiente paso →</button>
+            </div>
+          </div>
+
+          <div class="step-panel" data-step-panel="2" hidden>
+            <div class="step-panel-text">
+              <h3>2. Entrenamiento: aprender de miles de casos</h3>
+              <p>El modelo revisa miles de ejemplos que ya fueron etiquetados por especialistas —por ejemplo, radiografías marcadas como "sana" o "con tumor"— y ajusta sus parámetros hasta reconocer los patrones que distinguen un caso del otro.</p>
+              <p>Mientras más variados sean los datos (edades, sexos, orígenes), mejor funcionará con pacientes reales y menos sesgos tendrá.</p>
+            </div>
+            <div class="step-example">
+              <h4>Ejemplo real</h4>
+              <p>El modelo REDMOD de Mayo Clinic se validó con cerca de 2 000 tomografías de distintas instituciones y equipos, para que funcione igual en cualquier hospital.</p>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-step-prev>← Anterior</button>
+              <button type="button" class="btn btn-primary" data-step-next>Siguiente paso →</button>
+            </div>
+          </div>
+
+          <div class="step-panel" data-step-panel="3" hidden>
+            <div class="step-panel-text">
+              <h3>3. Validación: probar antes de confiar</h3>
+              <p>Antes de usarse en un hospital, el modelo se evalúa con datos que nunca vio durante el entrenamiento, para confirmar que sus resultados se sostienen con pacientes reales y no solo con los ejemplos que ya conocía.</p>
+              <p>En dispositivos médicos, esta etapa incluye además una revisión regulatoria: la FDA, por ejemplo, evalúa el riesgo de cada herramienta antes de autorizar su uso clínico.</p>
+            </div>
+            <div class="step-example">
+              <h4>Ejemplo real</h4>
+              <p>La FDA ya ha autorizado más de 1 500 dispositivos médicos con IA, la mayoría en radiología, tras pasar por este proceso de validación.</p>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-step-prev>← Anterior</button>
+              <button type="button" class="btn btn-primary" data-step-next>Siguiente paso →</button>
+            </div>
+          </div>
+
+          <div class="step-panel" data-step-panel="4" hidden>
+            <div class="step-panel-text">
+              <h3>4. Uso clínico: una herramienta, no un reemplazo</h3>
+              <p>Una vez aprobado, el modelo se integra al flujo de trabajo del hospital: señala casos prioritarios, sugiere posibles diagnósticos o agiliza tareas administrativas. El profesional de salud revisa cada resultado antes de tomar una decisión.</p>
+              <p>En Panamá, por ejemplo, herramientas como RAISA ya apoyan el monitoreo de enfermedades crónicas dentro del Programa Nacional de Telesalud.</p>
+            </div>
+            <div class="step-example">
+              <h4>Ejemplo real</h4>
+              <p>RAISA, del Programa Nacional de Telesalud de Panamá, ya apoya el monitoreo de enfermedades crónicas y la interpretación de resultados de laboratorio.</p>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-step-prev>← Anterior</button>
+              <button type="button" class="btn btn-primary" data-step-next disabled>Siguiente paso →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="aplicaciones">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Aplicaciones</span>
+          <h2>Dónde ayuda la IA hoy</h2>
+          <p>Explora las cuatro áreas donde la IA ya tiene impacto clínico real.</p>
+        </div>
+
+        <div class="areas-layout">
+          <div class="areas-list">
+            <button type="button" class="areas-list-item active" data-area="1">
+              <span class="app-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 14l4-4 3 3 5-6 6 6"/></svg>
+              </span>
+              <span>
+                <strong>Diagnóstico por imágenes</strong>
+                <small>Radiología y dermatología</small>
+              </span>
+            </button>
+            <button type="button" class="areas-list-item" data-area="2">
+              <span class="app-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6L4 20a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-12V2"/><path d="M8 2h8"/></svg>
+              </span>
+              <span>
+                <strong>Fármacos y tratamientos</strong>
+                <small>Medicina de precisión</small>
+              </span>
+            </button>
+            <button type="button" class="areas-list-item" data-area="3">
+              <span class="app-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2"/></svg>
+              </span>
+              <span>
+                <strong>Telemedicina y monitoreo</strong>
+                <small>Atención a distancia</small>
+              </span>
+            </button>
+            <button type="button" class="areas-list-item" data-area="4">
+              <span class="app-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.775-3.775a6 6 0 0 1-7.94 7.94l-6.616 6.216a2.121 2.121 0 0 1-3-3l6.216-6.616a6 6 0 0 1 7.94-7.94z"/></svg>
+              </span>
+              <span>
+                <strong>Cirugía asistida</strong>
+                <small>Robótica quirúrgica</small>
+              </span>
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="areas-detail" data-area-panel="1">
+              <div class="areas-detail-text">
+                <h3>Diagnóstico por imágenes</h3>
+                <p>Algoritmos entrenados con miles de radiografías, tomografías, resonancias y fotos de la piel señalan zonas sospechosas para que el radiólogo o dermatólogo las revise con más atención. Es especialmente útil para detectar a tiempo cánceres de mama, piel y pulmón.</p>
+                <p>También se estudia su uso en resonancias cerebrales para reconocer patrones asociados a etapas tempranas del Alzheimer, siempre con la revisión final de un especialista.</p>
+                <div class="areas-case">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <div>
+                    <strong>Caso real · NHS, 2026</strong>
+                    <p>En un estudio con 175 000 mujeres, la IA detectó más cánceres de mama y tuvo menos falsos positivos que la lectura humana.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="areas-side">
+                <h4>En pocas palabras</h4>
+                <ul>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Analiza radiografías, tomografías y fotos de la piel.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Ayuda a priorizar los casos más urgentes.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>El diagnóstico final siempre lo confirma un médico.</li>
+                </ul>
+                <div class="image-placeholder compact">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span>Imagen: diagnóstico por imágenes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="areas-detail" data-area-panel="2" hidden>
+              <div class="areas-detail-text">
+                <h3>Fármacos y tratamientos</h3>
+                <p>Modelos capaces de predecir cómo se pliega una proteína, como AlphaFold, han acelerado el estudio de nuevas moléculas para futuros medicamentos, un proceso que antes tomaba años de trabajo de laboratorio.</p>
+                <p>En oncología, el análisis genómico asistido por IA ayuda a identificar qué mutaciones tiene el tumor de un paciente, para orientar terapias más dirigidas en lugar de aplicar el mismo tratamiento a todos los casos.</p>
+                <div class="areas-case">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <div>
+                    <strong>Caso real · AlphaFold</strong>
+                    <p>Los modelos de predicción de estructura de proteínas ya aceleran años de trabajo de laboratorio en el descubrimiento de nuevos fármacos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="areas-side">
+                <h4>En pocas palabras</h4>
+                <ul>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Menos tiempo entre la investigación y el tratamiento disponible.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tratamientos más ajustados a cada paciente.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Menor margen de error humano al cruzar mucha información.</li>
+                </ul>
+                <div class="image-placeholder compact">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span>Imagen: fármacos y tratamientos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="areas-detail" data-area-panel="3" hidden>
+              <div class="areas-detail-text">
+                <h3>Telemedicina y monitoreo</h3>
+                <p>Los asistentes virtuales de salud (chatbots) ayudan a resolver dudas básicas, dar seguimiento a citas y orientar a un paciente sobre si su situación requiere ir a urgencias.</p>
+                <p>Junto a ellos, los dispositivos portátiles —relojes inteligentes, sensores de glucosa, monitores de presión— generan datos en tiempo real que un modelo de IA puede analizar para avisar a tiempo si algo no anda bien.</p>
+                <div class="areas-case">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <div>
+                    <strong>Caso real · Panamá</strong>
+                    <p>RAISA, del Programa Nacional de Telesalud, ya apoya a pacientes con enfermedades crónicas a distancia.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="areas-side">
+                <h4>En pocas palabras</h4>
+                <ul>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Chatbots de primer contacto con el paciente.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Relojes y sensores que miden signos vitales.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Alertas tempranas para pacientes crónicos.</li>
+                </ul>
+                <div class="image-placeholder compact">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span>Imagen: telemedicina y monitoreo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="areas-detail" data-area-panel="4" hidden>
+              <div class="areas-detail-text">
+                <h3>Cirugía asistida</h3>
+                <p>En quirófano, los sistemas robóticos asistidos por IA ayudan al cirujano a operar con mayor precisión y con movimientos más estables, reduciendo el tamaño de las incisiones en procedimientos como cirugías de próstata o de corazón.</p>
+                <p>El robot no opera solo: es guiado en todo momento por el equipo médico, que mantiene el control de cada decisión durante la cirugía.</p>
+                <div class="areas-case">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <div>
+                    <strong>Caso real · Robótica quirúrgica</strong>
+                    <p>Sistemas robóticos quirúrgicos ya se usan en miles de hospitales para procedimientos de próstata, corazón y ginecología con mayor precisión.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="areas-side">
+                <h4>En pocas palabras</h4>
+                <ul>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Aumenta la precisión y estabilidad del cirujano.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reduce el tamaño de las incisiones.</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>El equipo médico guía al robot en todo momento.</li>
+                </ul>
+                <div class="image-placeholder compact">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span>Imagen: cirugía asistida</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 8.5a3.5 3.5 0 1 1 3.5 3.5"/><path d="M12 12v3M12 19h.01"/><circle cx="12" cy="12" r="10"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="mito-realidad">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Pon a prueba lo que sabes</span>
+          <h2>¿Mito o realidad?</h2>
+          <p>Haz clic en cada tarjeta para descubrir la respuesta.</p>
+        </div>
+
+        <div class="flip-grid">
+          <div class="flip-card" tabindex="0" role="button" aria-label="Voltear tarjeta 1">
+            <div class="flip-card-inner">
+              <div class="flip-face">
+                <span class="tag">Afirmación 1</span>
+                <h4>"La IA va a reemplazar a los médicos."</h4>
+                <span class="flip-hint">Toca para voltear ↻</span>
+              </div>
+              <div class="flip-face flip-face-back">
+                <span class="tag">Mito</span>
+                <h4>La IA funciona como herramienta de apoyo.</h4>
+                <p>Modelos como REDMOD ayudan a detectar señales tempranas, pero el especialista sigue confirmando cada diagnóstico.</p>
+                <a class="source" href="https://www.who.int/news/item/28-06-2021-who-issues-first-global-report-on-ai-in-health-and-six-guiding-principles-for-its-design-and-use" target="_blank" rel="noopener noreferrer">Fuente: OMS, 2021 ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" tabindex="0" role="button" aria-label="Voltear tarjeta 2">
+            <div class="flip-card-inner">
+              <div class="flip-face">
+                <span class="tag">Afirmación 2</span>
+                <h4>"La IA puede detectar señales de enfermedad antes de que aparezcan síntomas."</h4>
+                <span class="flip-hint">Toca para voltear ↻</span>
+              </div>
+              <div class="flip-face flip-face-back">
+                <span class="tag">Realidad</span>
+                <h4>Confirmado por un estudio real.</h4>
+                <p>El modelo REDMOD de Mayo Clinic detectó señales de cáncer de páncreas en tomografías leídas como normales, hasta 3 años antes del diagnóstico.</p>
+                <a class="source" href="https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-ai-detects-pancreatic-cancer-up-to-3-years-before-diagnosis-in-landmark-validation-study/" target="_blank" rel="noopener noreferrer">Fuente: Mayo Clinic, 2026 ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" tabindex="0" role="button" aria-label="Voltear tarjeta 3">
+            <div class="flip-card-inner">
+              <div class="flip-face">
+                <span class="tag">Afirmación 3</span>
+                <h4>"Los algoritmos son neutrales y no tienen sesgos."</h4>
+                <span class="flip-hint">Toca para voltear ↻</span>
+              </div>
+              <div class="flip-face flip-face-back">
+                <span class="tag">Mito</span>
+                <h4>Un modelo puede heredar sesgos.</h4>
+                <p>Si los datos de entrenamiento no representan a toda la población, el modelo puede fallar más con algunos grupos. Por eso la OMS pide vigilar la equidad de los resultados.</p>
+                <a class="source" href="https://www.who.int/news/item/28-06-2021-who-issues-first-global-report-on-ai-in-health-and-six-guiding-principles-for-its-design-and-use" target="_blank" rel="noopener noreferrer">Fuente: OMS, 2021 ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v6c0 5 3.8 8.4 9 9 5.2-.6 9-4 9-9V7z"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="etica">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Regulación y ética</span>
+          <h2>Beneficios, retos y principios</h2>
+          <p>Usar inteligencia artificial en la salud trae beneficios claros, pero también plantea preguntas importantes que hospitales, gobiernos y desarrolladores deben resolver con cuidado.</p>
+        </div>
+
+        <div class="content-grid">
+          <article class="card article-card">
+            <h2>La balanza de la IA en salud</h2>
+            <div class="balance-grid">
+              <div>
+                <h3 class="balance-heading benefits">✓ Beneficios</h3>
+                <ul class="balance-list benefits">
+                  <li>Detección más temprana de enfermedades.</li>
+                  <li>Menos trabajo repetitivo para el personal médico.</li>
+                  <li>Orientación médica básica en zonas alejadas.</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="balance-heading risks">! Retos</h3>
+                <ul class="balance-list risks">
+                  <li>Proteger la privacidad de los datos del paciente.</li>
+                  <li>Evitar sesgos por datos poco representativos.</li>
+                  <li>Mantener la supervisión de un profesional humano.</li>
+                </ul>
+              </div>
+            </div>
+            <p>La OMS publicó en 2021 su guía de ética y gobernanza de la inteligencia artificial para la salud, y en mayo de 2023 reforzó ese llamado con una alerta específica sobre el uso seguro de los modelos de lenguaje (LLM). Ambas piden garantizar transparencia, protección de datos y supervisión humana.</p>
+          </article>
+
+          <aside class="card aside-block" aria-labelledby="aside-principios">
+            <h3 id="aside-principios">Los 6 principios de la OMS</h3>
+            <p class="body-text">Guía "Ética y gobernanza de la IA para la salud" (2021)</p>
+
+            <div class="accordion">
+              <div class="accordion-item open" data-accordion-item>
+                <button type="button" class="accordion-trigger" data-accordion-trigger>
+                  <span class="accordion-num">1</span>
+                  <strong>Proteger la autonomía</strong>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-panel">
+                  <p>Las personas mantienen el control de las decisiones médicas y de sus datos; la IA no decide por ellas.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-accordion-item>
+                <button type="button" class="accordion-trigger" data-accordion-trigger>
+                  <span class="accordion-num">2</span>
+                  <strong>Promover el bienestar y la seguridad</strong>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-panel">
+                  <p>Los sistemas deben priorizar el interés público y evitar cualquier daño a los pacientes.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-accordion-item>
+                <button type="button" class="accordion-trigger" data-accordion-trigger>
+                  <span class="accordion-num">3</span>
+                  <strong>Garantizar la transparencia</strong>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-panel">
+                  <p>Los resultados de la IA deben poder explicarse a pacientes y profesionales de salud.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-accordion-item>
+                <button type="button" class="accordion-trigger" data-accordion-trigger>
+                  <span class="accordion-num">4</span>
+                  <strong>Fomentar la responsabilidad</strong>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-panel">
+                  <p>Debe quedar claro quién responde si algo sale mal: el desarrollador, el hospital o el profesional.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-accordion-item>
+                <button type="button" class="accordion-trigger" data-accordion-trigger>
+                  <span class="accordion-num">5</span>
+                  <strong>Asegurar la inclusión y la equidad</strong>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-panel">
+                  <p>Los sistemas deben representar a poblaciones diversas y no ampliar desigualdades existentes.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-accordion-item>
+                <button type="button" class="accordion-trigger" data-accordion-trigger>
+                  <span class="accordion-num">6</span>
+                  <strong>IA sostenible y adaptable</strong>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-panel">
+                  <p>La tecnología debe evaluarse y actualizarse conforme cambian las necesidades de salud.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="card aside-block" style="margin-top:1.5rem;">
+          <h2>Para profundizar</h2>
+          <div class="ext-links two-col">
+            <a class="ext-link" href="https://www.who.int/es/news/item/16-05-2023-who-calls-for-safe-and-ethical-ai-for-health" target="_blank" rel="noopener noreferrer">
+              OMS — Uso seguro y ético de la IA
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="ext-link" href="https://campus.paho.org/es/curso/WebinarioInteligenciaArtificialII" target="_blank" rel="noopener noreferrer">
+              OPS — Alfabetización digital en IA
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="hitos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Línea de tiempo</span>
+          <h2>Hitos recientes</h2>
+          <p>Avances normativos que marcan el camino de la IA en salud a nivel global y en Panamá.</p>
+        </div>
+
+        <div class="hitos-track" aria-hidden="true">
+          <span class="hitos-track-line"></span>
+          <span class="hitos-point"></span>
+          <span class="hitos-point"></span>
+          <span class="hitos-point"></span>
+          <span class="hitos-point highlight"></span>
+          <span class="hitos-point"></span>
+        </div>
+
+        <ol class="timeline hitos-timeline">
+          <li>
+            <time datetime="2021-06">Jun 2021 · OMS</time>
+            <p>Publica su primera guía global de ética y gobernanza de la IA para la salud.</p>
+          </li>
+          <li>
+            <time datetime="2023-05">May 2023 · OMS</time>
+            <p>Llama a usar con cautela los modelos de lenguaje (LLM) en salud.</p>
+          </li>
+          <li>
+            <time datetime="2024-01">Ene 2024 · OMS</time>
+            <p>Emite su guía sobre modelos multimodales grandes, con más de 40 recomendaciones.</p>
+          </li>
+          <li class="timeline-highlight">
+            <time datetime="2026-07">Jul 2026 · Panamá</time>
+            <p>Lanza su Agenda Nacional de Tecnologías Avanzadas, con una Estrategia Nacional de IA.</p>
+          </li>
+          <li>
+            <time datetime="2026-08">Ago 2026 · FDA</time>
+            <p>Abre consulta pública para regular dispositivos médicos con IA generativa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </span>
+      <span class="divider-line"></span>
+    </div>
+
+    <section id="equipo">
+      <div class="container">
+        <div class="section-head centered">
+          <span class="section-kicker">Créditos</span>
+          <h2>Nuestro equipo</h2>
+          <p>Estudiantes de Ingeniería de Software de la Universidad Tecnológica de Panamá.</p>
+        </div>
+
+        <div class="team-grid centered">
+          <div class="card team-card detailed">
+            <div class="team-avatar">F</div>
+            <h3>[Nombre] Fuentes</h3>
+            <p>Ingeniería de Software · UTP</p>
+            <div class="team-tags">
+              <span class="team-tag">Diseño UI</span>
+              <span class="team-tag">HTML y CSS</span>
+              <span class="team-tag">Investigación</span>
+            </div>
+            <div class="team-links">
+              <a href="#" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 8.98h4v12H3zM9.5 8.98H13v1.64h.05c.5-.9 1.7-1.85 3.5-1.85 3.74 0 4.45 2.46 4.45 5.66v6.55h-4v-5.8c0-1.38-.03-3.15-1.92-3.15-1.93 0-2.22 1.5-2.22 3.05v5.9h-4z"/></svg></a>
+            </div>
+          </div>
+
+          <div class="card team-card detailed">
+            <div class="team-avatar">O</div>
+            <h3>[Nombre] Orellana</h3>
+            <p>Ingeniería de Software · UTP</p>
+            <div class="team-tags">
+              <span class="team-tag">JavaScript</span>
+              <span class="team-tag">Contenido</span>
+              <span class="team-tag">Formulario</span>
+            </div>
+            <div class="team-links">
+              <a href="#" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 8.98h4v12H3zM9.5 8.98H13v1.64h.05c.5-.9 1.7-1.85 3.5-1.85 3.74 0 4.45 2.46 4.45 5.66v6.55h-4v-5.8c0-1.38-.03-3.15-1.92-3.15-1.93 0-2.22 1.5-2.22 3.05v5.9h-4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="img/logo.png" alt="Logo de MediIA">
+            MediIA
+          </div>
+          <p>Proyecto académico sobre IA en el ámbito médico, desarrollado para el curso de Ingeniería Web.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/icons/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/icons/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="img/icons/linkedin.png" alt=""></a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="img/icons/twitter.png" alt=""></a>
+          </div>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fuentes</h3>
+          <ul>
+            <li><a href="https://www.who.int/health-topics/artificial-intelligence" target="_blank" rel="noopener noreferrer">OMS</a></li>
+            <li><a href="https://www.paho.org/es/inteligencia-artificial-para-salud" target="_blank" rel="noopener noreferrer">OPS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Proyecto</h3>
+          <ul>
+            <li>UTP · FISC</li>
+            <li>Ingeniería Web</li>
+            <li>Grupo 1SF134</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 · UTP · FISC · Ingeniería Web · Grupo 1SF134 · Fuentes &amp; Orellana</p>
+    </div>
+  </footer>
+
+  <script src="js/acerca.js"></script>
+</body>
+</html>

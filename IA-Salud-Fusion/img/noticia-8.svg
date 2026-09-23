@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="n8Title">
+  <title id="n8Title">Gráfico de barras ascendente representando el aumento del uso de IA entre médicos</title>
+  <defs>
+    <linearGradient id="n8Bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#134e6f"/>
+      <stop offset="100%" stop-color="#0d6e6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#n8Bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.15">
+    <line x1="0" y1="200" x2="400" y2="200"/>
+  </g>
+  <g fill="#5eead4">
+    <rect x="70" y="150" width="34" height="50" rx="4" opacity="0.55"/>
+    <rect x="130" y="120" width="34" height="80" rx="4" opacity="0.7"/>
+    <rect x="190" y="90" width="34" height="110" rx="4" opacity="0.85"/>
+    <rect x="250" y="55" width="34" height="145" rx="4"/>
+  </g>
+  <text x="65" y="45" font-family="Arial, sans-serif" font-size="13" fill="#e6f4f3" opacity="0.85">Uso de IA entre médicos, 2023–2026</text>
+  <text x="248" y="45" font-family="Arial, sans-serif" font-size="20" fill="#fbbf24" font-weight="bold">81%</text>
+</svg>
